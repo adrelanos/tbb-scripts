@@ -231,7 +231,7 @@ cd "${HOME}"
 # or start the script -standalone
 
 if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
-	./App/Firefox/firefox --profile Data/profile -style Cleanlooks
+	./App/Firefox/firefox --profile Data/profile
 else
 	./App/vidalia --datadir Data/Vidalia/ -style Cleanlooks
 fi
