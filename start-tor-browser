@@ -222,8 +222,22 @@ printf "\nLaunching Tor Browser Bundle for Linux in ${HOME}\n"
 cd "${HOME}"
 # XXX Someday we should pass whatever command-line arguments we got
 # (probably filenames or URLs) to Firefox.
-./App/vidalia --datadir Data/Vidalia/ -style Cleanlooks
+
+# In case you only want to start TorBrowser and do not want to start
+# Tor/Vidalia.
+# either set in shell
+#   TB_STANDALONE=1
+#   export TB_STANDALONE
+# or start the script -standalone
+
+if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
+	./App/Firefox/firefox --profile Data/profile -style Cleanlooks
+else
+	./App/vidalia --datadir Data/Vidalia/ -style Cleanlooks
+fi
+
 exitcode="$?"
+
 if [ "$exitcode" -ne 0 ]; then
 	complain "Vidalia exited abnormally.  Exit code: $exitcode"
 	exit "$exitcode"
