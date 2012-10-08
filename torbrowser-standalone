@@ -15,6 +15,10 @@ if [ ! -z "$TOR_TRANSPROXY" ]; then
    TOR_TRANSPROXY=0
 fi
 
+########################################################################################################
+# NOT YET IMPLEMENTED                                                                                  #
+########################################################################################################
+
 # You need these to specify a SOCKS host (if not transtor):
 if [ ! -z "$TOR_SOCKS_HOST" ]; then
    TOR_SOCKS_HOST="127.0.0.1"
