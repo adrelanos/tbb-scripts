@@ -226,8 +226,7 @@ cd "${HOME}"
 # In case you only want to start TorBrowser and do not want to start
 # Tor/Vidalia.
 # either set in shell
-#   TB_STANDALONE=1
-#   export TB_STANDALONE
+#   export TB_STANDALONE=1
 # or start the script -standalone
 
 if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
