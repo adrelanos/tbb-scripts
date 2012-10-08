@@ -6,7 +6,10 @@
 # You need this to start only Tor Browser as startalone, not starting Vidalia.
 TB_STANDALONE=1
 
-# Uncomment the following line to if you are using a transparent Tor proxy.
+# Set to 1 if you want to use Tor Browser behind a transparent proxy.
+# NOTE: If you want to deactivate it later, you have to use:
+#     unset TOR_TRANSPROXY
+# https://trac.torproject.org/projects/tor/ticket/6254
 if [ ! -z "$TOR_TRANSPROXY" ]; then
    TOR_TRANSPROXY=0
 fi
