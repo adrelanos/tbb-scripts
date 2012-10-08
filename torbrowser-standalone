@@ -11,7 +11,7 @@ TB_STANDALONE=1
 #     unset TOR_TRANSPROXY
 # This was introduced in Tor Button 1.4.6.2.
 #     https://trac.torproject.org/projects/tor/ticket/6254
-if [ ! -z "$TOR_TRANSPROXY" ]; then
+if [ ! -z "TOR_TRANSPROXY" ]; then
    TOR_TRANSPROXY=0
 fi
 
@@ -20,12 +20,12 @@ fi
 ########################################################################################################
 
 # You need these to specify a SOCKS host (if not transtor):
-if [ ! -z "$TOR_SOCKS_HOST" ]; then
+if [ ! -z "TOR_SOCKS_HOST" ]; then
    TOR_SOCKS_HOST="127.0.0.1"
 fi
 
 # You need these to specify a SOCKS port (if not transtor):
-if [ ! -z "$TOR_SOCKS_HOST" ]; then
+if [ ! -z "TOR_SOCKS_HOST" ]; then
    TOR_SOCKS_PORT="9050"
 fi
 
