@@ -231,6 +231,14 @@ cd "${HOME}"
 
 if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
 	./App/Firefox/firefox --profile Data/profile
+
+        # If you want to start multiple instances of Tor Browser without Tor/Vidalia,
+        # out comment the line above and activate the line below.
+        # See:
+        # - https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
+        # - http://kb.mozillazine.org/Opening_a_new_instance_of_Firefox_with_another_profile
+        #
+        #./App/Firefox/firefox --profile Data/profile
 else
 	./App/vidalia --datadir Data/Vidalia/ -style Cleanlooks
 fi
