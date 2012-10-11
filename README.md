@@ -9,8 +9,7 @@ Alternative startup scripts for the Tor Browser Bundle.
 Just read the comments in start-tor-browser on how to
 use it.
 
-Ignore the torbrowser-standalone script. Read #5611,
-if you are curious what it is.
+torbrowser-standalone is a wrapper.
 
 Forked from:
 https://gitweb.torproject.org/torbrowser.git
