@@ -52,3 +52,7 @@ e-mail: adrelanos at riseup dot net
 
 For more, GPG and so on, have a look into my Whonix repository:
 https://github.com/adrelanos/Whonix
+
+Legal
+===========
+tbb-scripts is produced independently from the Tor (r) anonymity software and carries no guarantee from The Tor Project about quality, suitability or anything else.
