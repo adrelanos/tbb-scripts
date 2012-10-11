@@ -250,7 +250,7 @@ if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
         ## - https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
         ## - http://kb.mozillazine.org/Opening_a_new_instance_of_Firefox_with_another_profile
         ##
-        #./App/Firefox/firefox --profile Data/profile
+        #./App/Firefox/firefox --profile Data/profile -no-remote
 else
 	./App/vidalia --datadir Data/Vidalia/ -style Cleanlooks
 fi
