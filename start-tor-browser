@@ -1,7 +1,21 @@
 #!/bin/sh
 
+##############
+## Comments ##
+##############
+
 ## ## are comments.
 ## # for out commented commands.
+
+## In case you only want to start Tor Browser and do not want to start
+## Tor/Vidalia.
+## either set in shell or in this script
+#export TB_STANDALONE=1
+## or start the script -standalone
+
+##########
+## Code ##
+##########
 
 ##
 ## GNU/Linux does not really require something like RelativeLink.c
@@ -226,12 +240,6 @@ printf "\nLaunching Tor Browser Bundle for Linux in ${HOME}\n"
 cd "${HOME}"
 ## XXX Someday we should pass whatever command-line arguments we got
 ## (probably filenames or URLs) to Firefox.
-
-## In case you only want to start TorBrowser and do not want to start
-## Tor/Vidalia.
-## either set in shell
-##   export TB_STANDALONE=1
-## or start the script -standalone
 
 if [ "$TB_STANDALONE" = "1" ] || [ "$1" = "-standalone" ]; then
 	./App/Firefox/firefox --profile Data/profile
