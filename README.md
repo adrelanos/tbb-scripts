@@ -11,6 +11,9 @@ use it.
 
 torbrowser-standalone is a wrapper.
 
+Tor Browser wiki article:
+https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
+
 Forked from:
 https://gitweb.torproject.org/torbrowser.git
 https://gitweb.torproject.org/torbrowser.git/blob/refs/heads/master:/src/RelativeLink/RelativeLink.sh
