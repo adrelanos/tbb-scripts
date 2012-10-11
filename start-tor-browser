@@ -7,11 +7,18 @@
 ## ## are comments.
 ## # for out commented commands.
 
-## In case you only want to start Tor Browser and do not want to start
-## Tor/Vidalia.
-## either set in shell or in this script
+## Copyright 2011 The Tor Project.  See LICENSE for licensing information.
+
+## To run in debug mode simply pass --debug
+
+## In case you only want to start Tor Browser
+## and do not want to start Tor/Vidalia,
+## either start the script with -standalone
+## or set in shell or in this script
 #export TB_STANDALONE=1
-## or start the script -standalone
+
+## If you want to start multiple instances of Tor Browser without Tor/Vidalia,
+## search the script for "-no-remote" and read the comment above.
 
 ##########
 ## Code ##
@@ -21,9 +28,6 @@
 ## GNU/Linux does not really require something like RelativeLink.c
 ## However, we do want to have the same look and feel with similar features.
 ##
-## To run in debug mode simply pass --debug
-##
-## Copyright 2011 The Tor Project.  See LICENSE for licensing information.
 
 complain_dialog_title="Tor Browser Bundle"
 
