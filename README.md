@@ -2,8 +2,15 @@ tbb-scripts
 ===========
 
 Alternative startup scripts for the Tor Browser Bundle.
-- For starting up Tor Browser without Tor and Vidalia
-- Tor Browser behind transparent proxy or Tor Router.
+- For starting up Tor Browser without Tor and Vidalia.
+- Start multiple instances of Tor Browser.
+- Tor Browser behind a transparent proxy or Tor Router.
+
+Just read the comments in start-tor-browser on how to
+use it.
+
+Ignore the torbrowser-standalone script. Read #5611,
+if you are curious what it is.
 
 Forked from:
 https://gitweb.torproject.org/torbrowser.git
