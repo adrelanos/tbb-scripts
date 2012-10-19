@@ -1,0 +1,18 @@
+#!/bin/sh
+
+## source:
+## https://lists.torproject.org/pipermail/tor-talk/2012-October/026040.html
+## (c) Abel Luck abel at guardianproject.info 
+
+cd tor-browser_en-US
+MOZ_NO_RMEOTE=1
+TZ=UTC
+TOR_SOCKS_HOST=....
+TOR_SOCKS_PORT=....
+
+export TOR_SOCKS_HOST
+export TOR_SOCKS_PORT
+export MOZ_NO_REMOTE
+export TZ
+
+./App/Firefox/firefox -no-remote -profile ./Data/profile 

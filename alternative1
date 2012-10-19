@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## source:
+## https://github.com/virtadpt/Experiments/blob/master/tbb.sh
+## https://lists.torproject.org/pipermail/tor-talk/2012-October/026024.html
+## (c) The Doctor drwho at virtadpt.net
+
+echo "Starting Tor Browser Bundle."
+cd tor-browser_en-US
+./App/Firefox/firefox -no-remote -profile ./Data/profile 
