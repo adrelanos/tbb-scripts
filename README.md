@@ -2,9 +2,12 @@ tbb-scripts
 ===========
 
 Alternative startup scripts for the Tor Browser Bundle.
-- For starting up Tor Browser without Tor and Vidalia.
-- Start multiple instances of Tor Browser.
-- Tor Browser behind a transparent proxy or Tor Router.
+
+* For starting up Tor Browser without Tor and Vidalia.
+* Start multiple instances of Tor Browser.
+* Tor Browser behind a transparent proxy or Tor Router.
+* Tor Browser in Tails (pre-alpha) [1]
+* Tor Browser download and update script (pre-alpha) [1]
 
 Just read the comments in start-tor-browser on how to
 use it.
@@ -12,14 +15,22 @@ use it.
 torbrowser-standalone is a wrapper.
 
 Tor Browser wiki article:
-https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
+
+* https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
 
 Forked from:
-https://gitweb.torproject.org/torbrowser.git
-https://gitweb.torproject.org/torbrowser.git/blob/refs/heads/master:/src/RelativeLink/RelativeLink.sh
+
+* https://gitweb.torproject.org/torbrowser.git
+* https://gitweb.torproject.org/torbrowser.git/blob/refs/heads/master:/src/RelativeLink/RelativeLink.sh
 
 Discussion with upstream, torproject.org:
-https://trac.torproject.org/projects/tor/ticket/5611
+
+* https://trac.torproject.org/projects/tor/ticket/5611
+
+[1]
+
+* https://mailman.boum.org/pipermail/tails-dev/2012-October/001905.html
+* https://github.com/adrelanos/Whonix/blob/master/whonix_workstation/usr/local/bin/torbrowser
 
 Supported platforms
 ===========
