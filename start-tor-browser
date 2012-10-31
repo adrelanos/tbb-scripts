@@ -12,9 +12,11 @@
 ## To run in debug mode simply pass --debug
 
 ## In case you only want to start Tor Browser
-## and do not want to start Tor/Vidalia,
-## either start the script with -standalone
-## or set in shell or in this script
+## and do not want to start Tor/Vidalia, either
+## (1) start the script with -standalone
+## (2) add to /etc/environment
+##     TB_STANDALONE=1
+## (3) set in shell or in this script
 #export TB_STANDALONE=1
 
 ## If you want to start multiple instances of Tor Browser without Tor/Vidalia,
